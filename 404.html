@@ -1,0 +1,114 @@
+---
+title: 404 Error
+author: K B Hemanth Raj
+keyword: Page Unavailabe
+description: Page not found 404 Error
+---
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<link rel="icon" type="image/ico" href="https://hemanthrajhemu.github.io/FutureVisionBIE/logo.png" />
+	<!-- Tracking ID -->
+	{% if jekyll.environment == 'production' %}
+	{% include analytics.html %}
+	{% endif %}
+
+	<meta name="google-site-verification" content="google0186c8ef8f3bf22a.html">
+	<meta name="google-site-verification" content="googlead12f4cfae702c06.html">
+	<!-- indexing -->
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="robots" content="noindex" />
+	<link rel="stylesheet" href="https://hemanthrajhemu.github.io/DB/new.css">
+	<script src="https://hemanthrajhemu.github.io/DB/new.js">        </script>
+
+	{% seo %}
+</head>
+
+<body>
+	<div id="main">
+		<!--Header Include-->
+		{% if jekyll.environment == 'production' %}
+		{% include header.html %}
+		{% endif %}
+		<!-- CENTER PATH FOR INFO  -->
+
+		<style>
+			/*======================
+    404 page
+=======================*/
+
+
+			.page_404 {
+				padding: 40px 0;
+				background: #fff;
+				font-family: 'Arvo', serif;
+			}
+
+			.page_404 img {
+				width: 100%;
+			}
+
+			.four_zero_four_bg {
+
+				background-image: url(https://hemanthrajhemu.github.io/dribbble_1.gif);
+				height: 400px;
+				background-position: center;
+			}
+
+
+			.four_zero_four_bg h1 {
+				font-size: 80px;
+			}
+
+			.four_zero_four_bg h3 {
+				font-size: 80px;
+			}
+
+			.link_404 {
+				color: #fff !important;
+				padding: 10px 20px;
+				background: #39ac31;
+				margin: 20px 0;
+				display: inline-block;
+			}
+
+			.contant_box_404 {
+				margin-top: -50px;
+			}
+		</style>
+		<section class="page_404">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-12 ">
+						<div class="col-sm-10 col-sm-offset-1  text-center">
+							<div class="four_zero_four_bg">
+								<h1 class="text-center ">404</h1>
+
+
+							</div>
+
+							<div class="contant_box_404">
+								<h3 class="h2">
+									Look like you're lost
+								</h3>
+
+								<p>the page you are looking for not avaible!</p>
+
+								<a href="https://hemanthrajhemu.github.io/" class="link_404">Go to Home</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!--Footer Include 1-->
+		{% if jekyll.environment == 'production' %}
+		{% include footer.html %}
+		{% endif %}
+
+	</div>
+</body>
+
+</html>
